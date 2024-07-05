@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+  }
+
+body{
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('./Images/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container{
+    margin: auto;
+    height: 90%;
+    width: 90%;
+    display: grid;
+    grid-template-areas: 
+    "content content . stats stats"
+    "content content search stats stats"
+    "forecast forecast forecast forecast forecast";
+}
+
+#content{
+    grid-area: content;
+    border: 3px solid blue;
+}
+
+#stats{
+    grid-area: stats;
+    border: 3px solid yellow;
+
+}
+
+#forecast-container{
+    grid-area: forecast;
+    border: 3px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.high{
+    grid-area: high;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.low{
+    grid-area: low;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.day{
+    grid-area: day;
+    padding: 10px 0px;
+}
+
+.image{
+    grid-area: image;
+    width: 40px;
+}
+
+.forecast-item{
+    display: grid;
+    grid-template-areas: 
+    "day image . ."
+    "high high high high"
+    "low low low low";
+    justify-self: center;
+    align-self: center;
+}
+
+#search{
+    grid-area: search;
+    justify-self: center;
+    align-self: center;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+::placeholder{
+    color: #ffffff;
+}
+
+#search-box{
+    all: unset;
+    margin-left: 10px;
+    color: #ffffff;
+
+}
+
+#search-button{
+    cursor: pointer;
+    margin-right: 20px;
+}

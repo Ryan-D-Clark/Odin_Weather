@@ -1,0 +1,22 @@
+{
+  "name": "odin_weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "external.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ryan-D-Clark/Odin_Weather.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ryan-D-Clark/Odin_Weather/issues"
+  },
+  "homepage": "https://github.com/Ryan-D-Clark/Odin_Weather#readme",
+  "dependencies": {
+    "date-fns": "^3.6.0"
+  }
+}
