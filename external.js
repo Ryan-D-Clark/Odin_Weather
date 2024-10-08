@@ -26,7 +26,7 @@ let displayingC = true
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 async function retrieveInformation(location, type){
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a9b60755967f4dd89df195402240107&q=${location}&days=3`)
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a9b60755967f4dd89df195402240107&q=${location}&days=3`)
     if(response.ok && response.status == 200){
 
         const weatherData = await response.json();
