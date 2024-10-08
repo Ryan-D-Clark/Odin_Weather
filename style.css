@@ -1,0 +1,157 @@
+body{
+    background-color: #1f2020;
+    color: #d1d1d1;
+
+}
+
+::placeholder{
+    color: #d1d1d1;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-box-container{
+    display: block;
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 20px;
+    text-wrap: nowrap;
+}
+
+#search-box-container input{
+    border: none;
+    background-color: #3c3c3c;
+    padding: 5px;
+    color: #d1d1d1;
+}
+
+#search-button, #search-box{
+    cursor: pointer;
+}
+
+
+#search-button:hover{
+    color: #1f2020;
+}
+
+#information-container{
+    display: none;
+    position: relative;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: #3c3c3c;
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+}
+
+#location-name{
+    font-size: 30px;
+}
+
+#current-weather-image{
+    font-size: 100em;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    padding: 5px;
+
+}
+
+#current-weather-temperature{
+    font-size: 20px;
+}
+
+#change-type-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none;
+    text-wrap: nowrap;
+    padding: 5px;
+    width: 60px;
+    cursor: pointer;
+    background-color: #1f2020;
+    border-radius: 5px;
+}
+
+.forecast-item{
+    background-color: #1f2020;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 20px;
+}
+
+.forecast-title{
+    
+}
+
+.forecast-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "temp-icon up-arrow high"
+    "temp-icon down-arrow low"
+    ;
+}
+
+.highest-temp{
+    grid-area: up-arrow;
+    padding: 2px;
+    color: #34c13d;
+}
+
+.lowest-temp{
+    grid-area: down-arrow;
+    padding: 2px;
+    color: #d9431d;
+}
+
+.temp-icon{
+    grid-area: temp-icon;
+}
+
+.high{
+    grid-area: high;
+}
+
+.low{
+    grid-area: low;
+}
+
+#forecast-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#forecast-tomorrow{
+    width: 100px;
+}
+
+#forecast-next-day{
+    width: 100px;
+}
+
+#back-button{
+    position: absolute;
+    bottom: 10px;
+    justify-self: center;
+    background-color: #1f2020;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#back-button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="external.js" defer></script>
+    <script src="https://kit.fontawesome.com/5c30b5e5d4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="container">
+        <div id="search-box-container">
+            <i class="fa-solid fa-location-dot"></i>
+            <input id="search-box" type="text" placeholder="Enter your Location">
+            <i id="search-button" class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div id="information-container">
+            <span id="change-type-button"><b>°C</b> / °F</span>
+            <div id="location-name"></div>
+            <img id="current-weather-image" src="" alt="">
+            <div id="current-weather-temperature"></div>
+            <div id="current-weather-description"></div>
+
+            <div id="forecast-container">
+                <div class="forecast-item" id="forecast-tomorrow">
+                    Tomorrow
+                    <div class="forecast-grid">
+                        <img src="" alt="" id="forecast-tomorrow-image" class="temp-icon">
+                        <div id="forecast-tomorrow-high-temp" class="high"></div>
+                        <i class="fa-solid fa-arrow-up highest-temp"></i>
+                        <div id="forecast-tomorrow-low-temp" class="low"></div>
+                        <i class="fa-solid fa-arrow-down lowest-temp"></i>
+                    </div>
+                </div>
+                <div class="forecast-item" id="forecast-next-day">
+                    <div id="forecast-next-day-title"></div>
+                    <div class="forecast-grid">
+                        <img src="" alt="" id="forecast-next-day-image" class="temp-icon">
+                        <div id="forecast-next-day-high-temp" class="high"></div>
+                        <i class="fa-solid fa-arrow-up highest-temp"></i>
+                        <div id="forecast-next-day-low-temp" class="low"></div>
+                        <i class="fa-solid fa-arrow-down lowest-temp"></i>
+                    </div>
+                </div>
+            </div>
+            <i id="back-button" class="fa-solid fa-angles-left"></i>
+        </div>
+    </div>
+</body>
+</html>
